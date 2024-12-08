@@ -30,6 +30,20 @@ nav {
   align-items: center;
   height: 17vh;
 }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures the nav spans the full width of the viewport */
+  background-color: #ffffff; /* Choose a suitable background color */
+  z-index: 1000; /* Ensures it stays above other elements */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Optional: Adds a subtle shadow for better visibility */
+}
+
+body {
+  padding-top: 60px; /* Adjust to match the height of the fixed nav bar */
+}
+
 .nav-links {
   gap: 2rem;
   list-style: none;
