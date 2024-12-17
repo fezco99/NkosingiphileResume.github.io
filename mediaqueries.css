@@ -6,7 +6,12 @@
   .about-containers {
     flex-wrap: wrap;
   }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
 }
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -36,6 +41,7 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    margin-top: 5%;
   }
   .about-containers {
     margin-top: 0;
@@ -46,6 +52,11 @@
   #contact,
   footer {
     height: 40vh;
+  }
+  .nav-links-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
   }
   #profile {
     height: 83vh;
@@ -60,9 +71,11 @@
   }
   .about-containers,
   .contact-info-upper-container,
-  .btn-container {
+  .btn-container,
+  .coming-soon-container {
     flex-wrap: wrap;
   }
+
   .contact-info-container {
     margin: 0;
   }
@@ -73,11 +86,15 @@
   .experience-sub-title {
     font-size: 1.25rem;
   }
+  .coming-soon-text {
+    font-size: 1.25rem;
+  }
   .logo {
     font-size: 1.5rem;
   }
   .nav-links {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: none;
     gap: 0.5rem;
     text-align: center;
   }
@@ -86,7 +103,7 @@
     height: 46vw;
     justify-content: center;
   }
-  .section-container__text__p2 {
+  .section__text__p2 {
     font-size: 1.25rem;
   }
   .title {
